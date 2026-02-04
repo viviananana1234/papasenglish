@@ -51,6 +51,11 @@ gh-pages 브랜치에 빌드 결과가 푸시되므로, Source를 **Deploy from 
 
 ---
 
+## 최근 수정 (상대 경로 적용)
+
+- `base` 경로를 `./`(상대 경로)로 변경하여 URL 불일치 시 오류를 줄였습니다.
+- 변경 후 `git add . && git commit -m "Fix: use relative base path" && git push origin main` 실행 후 재배포하세요.
+
 ## 체크리스트
 
 - [ ] Settings > Pages에서 Source가 **Deploy from a branch**, Branch가 **gh-pages**
