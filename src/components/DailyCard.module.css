@@ -1,0 +1,77 @@
+.section {
+  padding: 24px 16px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+  padding: 16px 20px;
+  background: linear-gradient(135deg, #f8f7ff 0%, #f0eeff 100%);
+  border-radius: 12px;
+  border: 1px solid #e8e5ff;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  color: #5b4fc9;
+  flex-shrink: 0;
+}
+
+.icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.label {
+  flex: 1;
+}
+
+.badge {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #5b4fc9;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 2px;
+}
+
+.title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.cardFrame {
+  position: relative;
+  padding: 12px;
+  background: linear-gradient(145deg, #fff 0%, #fafafa 100%);
+  border-radius: 16px;
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.04),
+    0 0 0 1px rgba(0, 0, 0, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.nextCardBtn {
+  width: 100%;
+  margin-top: 16px;
+  padding: 12px 16px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #5b4fc9;
+  background: #f8f7ff;
+  border: 2px solid #e8e5ff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.nextCardBtn:hover {
+  background: #f0eeff;
+  border-color: #5b4fc9;
+}
