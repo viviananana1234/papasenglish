@@ -10,12 +10,10 @@
 2. **Settings** 탭 클릭
 3. 왼쪽 메뉴에서 **Pages** 클릭
 4. **Build and deployment** 섹션에서:
-   - **Source**: **Deploy from a branch** 선택
-   - **Branch**: **gh-pages** 선택
-   - **Folder**: **/ (root)** 선택
+   - **Source**: **GitHub Actions** 선택
 5. Save 후 1~2분 기다리기
 
-gh-pages 브랜치에 빌드 결과가 푸시되므로, Source를 **Deploy from a branch**로 설정해야 합니다.
+이 프로젝트는 공식 `actions/deploy-pages` 워크플로우를 사용합니다. Source를 **GitHub Actions**로 설정해야 합니다.
 
 ---
 
@@ -51,14 +49,14 @@ gh-pages 브랜치에 빌드 결과가 푸시되므로, Source를 **Deploy from 
 
 ---
 
-## 최근 수정 (상대 경로 적용)
+## 최근 수정 (공식 deploy-pages 적용)
 
-- `base` 경로를 `./`(상대 경로)로 변경하여 URL 불일치 시 오류를 줄였습니다.
-- 변경 후 `git add . && git commit -m "Fix: use relative base path" && git push origin main` 실행 후 재배포하세요.
+- `peaceiris/actions-gh-pages` 대신 `actions/deploy-pages`로 전환했습니다.
+- Settings > Pages에서 Source를 **GitHub Actions**로 설정하세요.
 
 ## 체크리스트
 
-- [ ] Settings > Pages에서 Source가 **Deploy from a branch**, Branch가 **gh-pages**
+- [ ] Settings > Pages에서 Source가 **GitHub Actions**
 - [ ] Actions 탭에서 "Deploy to GitHub Pages" 워크플로우가 **성공**으로 완료됨
 - [ ] URL이 `https://viviananana1234.github.io/papasenglish/` 인지 확인
 - [ ] `main` 브랜치에 코드가 푸시됨 (푸시 시 자동으로 gh-pages에 빌드 배포)
